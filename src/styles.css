@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Black Ops One', cursive;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    overflow: hidden;
+    position:fixed;
+    background-image: url(https://img4.goodfon.com/wallpaper/nbig/a/e3/fitness-female-workout-girl-gym.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: red;
+    font-weight: bolder;
+    user-select: none;
+    
+}
+
+.header {
+    font-size: 2.7rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    text-align: center;
+    padding: 20px 30px 30px 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: red solid;
+    border-radius: 50px;
+    box-shadow: 
+    0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem rgb(255, 0, 0),
+    0 0 .8rem red,
+    0 0 1rem red,
+    inset 0 0 1.3rem red; 
+}
+
+.switchers_wrapper {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.switchersElement {
+    margin: 0 10px;
+    width: 199px;
+}
+
+.switchers {
+    display:flex;
+    justify-content:space-between;
+    margin: 5px 30px;
+}
+
+.down {
+    transform: rotate(135deg);
+    margin-top: -6px;
+}
+
+.up {
+    transform: rotate(315deg);
+    margin-top: 8px;
+}
+
+.switch-button {
+    background: none;
+    outline: none;
+    width: 25px;
+    height: 25px;
+    border-top: 5px solid red;
+    border-right: 5px solid red;
+    border-left: none;
+    border-bottom: none;
+    color: red;
+    cursor: pointer;
+}
+
+.timer {
+    margin: 20px auto;
+    width: 70%;
+    border: 4px rgb(68, 255, 249) solid;
+    box-shadow: 
+    0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem #0fa,
+    0 0 .8rem #0fa,
+    0 0 1rem #0fa,
+    inset 0 0 1.3rem #0fa; 
+    border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 95vw;
+    }
+     .switchers_wrapper {
+        display: inline-block;
+     }
+     .timer {
+        width: 100%;
+     }
+     .header {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    body {
+        background-position: right 40% center;
+    }
+}
+
+#timer-label {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#time-left {
+    font-size: 3.5rem;
+    text-align:center;
+    margin-bottom: 10px;
+}
+
+.buttonsWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#start_stop {
+    width: 44px;
+    height: 44px;
+    background:none;
+    border: 4px solid red;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 2px 1px;
+    margin-top: 10px;
+    margin-right: 5px;
+    transition: 150ms ease;
+}
+
+#reset {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: none;
+    color: red;
+    border: none;
+    transition: 150ms ease;
+}
+
+#start_stop:hover, #reset:hover {
+    transform: translateY(-4px);
+}
