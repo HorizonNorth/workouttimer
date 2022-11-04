@@ -87,6 +87,12 @@ body {
     cursor: pointer;
 }
 
+.switch-button:hover {
+   border-top:5px solid rgb(68, 255, 249);
+   border-right:5px solid rgb(68, 255, 249);
+   transition: 300ms;
+}
+
 .timer {
     margin: 20px auto;
     width: 70%;
@@ -162,4 +168,7 @@ body {
 
 #start_stop:hover, #reset:hover {
     transform: translateY(-4px);
+}
+#start_stop:active, #reset:active {
+    transform: translateY(4px);
 }
