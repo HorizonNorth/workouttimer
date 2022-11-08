@@ -1,7 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;}
+
+/* input,
+textarea,
+select, 
+a,  */
+button {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
@@ -20,15 +27,12 @@ body {
     background-size: cover;
     color: red;
     font-weight: bolder;
-    user-select: none;
-    
-}
+    user-select: none; }
 
 .header {
     font-size: 2.7rem;
     text-align: center;
-    margin-bottom: 20px;
-}
+    margin-bottom: 20px; }
 
 .wrapper {
     text-align: center;
@@ -43,55 +47,54 @@ body {
     0 0 .3rem rgb(255, 0, 0),
     0 0 .8rem red,
     0 0 1rem red,
-    inset 0 0 1.3rem red; 
-}
+    inset 0 0 1.3rem red; }
+
+/* SWITCHERS */
 
 .switchers_wrapper {
     font-size: 1.5rem;
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: space-between; }
 
 .switchersElement {
-    margin: 0 10px;
-    width: 199px;
-}
+    margin: 10px 10px;
+    width: 199px; }
 
 .switchers {
     display:flex;
     justify-content:space-between;
-    margin: 5px 30px;
-}
+    margin: -10px 15px; }
 
-.down {
-    transform: rotate(135deg);
-    margin-top: -6px;
-}
-
-.up {
-    transform: rotate(315deg);
-    margin-top: 8px;
-}
+.switchers span {
+    margin-top: 20px; }
 
 .switch-button {
     background: none;
     outline: none;
-    width: 25px;
-    height: 25px;
-    border-top: 5px solid red;
-    border-right: 5px solid red;
-    border-left: none;
-    border-bottom: none;
-    color: red;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
     cursor: pointer;
+    margin-top: 10px;
+} 
+
+.switch-button svg {
+    position: relative;
+    width: 150%;
+    height: 150%;
+    right: 25%;
+    bottom: 25%;
 }
 
 .switch-button:hover {
-   border-top:5px solid rgb(68, 255, 249);
-   border-right:5px solid rgb(68, 255, 249);
-   transition: 300ms;
-}
+    transform: translateY(-4px);
+    transition: 300ms; }
+.switch-button:active{
+    transform: translateY(4px); }
+
+/* timer section */
 
 .timer {
     margin: 20px auto;
@@ -105,25 +108,6 @@ body {
     0 0 1rem #0fa,
     inset 0 0 1.3rem #0fa; 
     border-radius: 50px;
-}
-
-@media (max-width: 600px) {
-    .wrapper {
-        width: 95vw;
-    }
-     .switchers_wrapper {
-        display: inline-block;
-     }
-     .timer {
-        width: 100%;
-     }
-     .header {
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
-    body {
-        background-position: right 40% center;
-    }
 }
 
 #timer-label {
@@ -153,8 +137,7 @@ body {
     padding: 2px 1px;
     margin-top: 10px;
     margin-right: 5px;
-    transition: 150ms ease;
-}
+    transition: 150ms ease;}
 
 #reset {
     cursor: pointer;
@@ -163,12 +146,54 @@ body {
     background: none;
     color: red;
     border: none;
-    transition: 150ms ease;
-}
+    transition: 150ms ease; }
 
 #start_stop:hover, #reset:hover {
-    transform: translateY(-4px);
-}
+    transform: translateY(-4px); }
+
 #start_stop:active, #reset:active {
-    transform: translateY(4px);
-}
+    transform: translateY(4px); }
+
+    
+    
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 95vw; }
+    .switchers_wrapper {
+        display: inline-block; }
+    
+    .switch-button:hover {
+        transform:none;
+    }
+
+    .switch-button:active {
+        animation: mobileAnimation ease 200ms;
+    }
+
+     #start_stop:hover, #reset:hover {
+        transform: none;
+     }
+     #start_stop:active, #reset:active {
+        animation: mobileAnimation ease 200ms;
+     }
+
+    .timer {
+        width: 100%;
+        margin-top: -10px; }
+    .header {
+        font-size: 2rem;
+        margin-bottom: 20px; }
+    body {
+        background-position: right 40% center; }
+
+    @keyframes mobileAnimation {
+        0% {
+            transform: translateY(-4px);
+        }
+        to {
+            transform: translateY(4px);
+         }
+        }
+
+    }
