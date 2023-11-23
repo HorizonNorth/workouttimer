@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/workouttimer/static/css/main.5709f444.css",
-    "main.js": "/workouttimer/static/js/main.6091e589.js",
+    "main.js": "/workouttimer/static/js/main.84081752.js",
     "static/media/BeepSound.wav": "/workouttimer/static/media/BeepSound.372995a9b53513b6fd79.wav",
     "index.html": "/workouttimer/index.html",
     "main.5709f444.css.map": "/workouttimer/static/css/main.5709f444.css.map",
-    "main.6091e589.js.map": "/workouttimer/static/js/main.6091e589.js.map"
+    "main.84081752.js.map": "/workouttimer/static/js/main.84081752.js.map"
   },
   "entrypoints": [
     "static/css/main.5709f444.css",
-    "static/js/main.6091e589.js"
+    "static/js/main.84081752.js"
   ]
 }
