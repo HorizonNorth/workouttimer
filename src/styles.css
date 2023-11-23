@@ -154,8 +154,6 @@ body {
 #start_stop:active, #reset:active {
     transform: translateY(4px); }
 
-    
-    
 
 @media (max-width: 600px) {
     .wrapper {
@@ -191,7 +189,7 @@ body {
         0% {
             transform: translateY(-4px);
         }
-        to {
+        100% {
             transform: translateY(4px);
          }
         }

@@ -5,9 +5,9 @@ import BeepSound from "./BeepSound.wav"
 
 
 export default function App() {
-  const [sessionLength, setSessionLength] = useState(25)
-  const [time, setTime] = useState([sessionLength,0])
-  const [breakLength, setBreakLength] = useState(5)
+  const [sessionLength, setSessionLength] = useState(2)
+  const [time, setTime] = useState([sessionLength, 24])
+  const [breakLength, setBreakLength] = useState(2)
   const [active, setActive] = useState(false)
   const [breake, setBreake] = useState(false)
 
@@ -18,8 +18,8 @@ export default function App() {
   let beep = document.getElementById('beep')
 
   function reset() {
-    setBreakLength(5)
-    setSessionLength(25)
+    setBreakLength(2)
+    setSessionLength(2)
     setTime([sessionLength, 0])
     setActive(false)
     setBreake(false)
